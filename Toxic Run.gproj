@@ -1,0 +1,86 @@
+<project>
+ <properties autorotation="0" encryptAssets="0" fps="60" scaleMode="0" mouseToTouch="1" iosDevice="0" packageName="com.wherry.toxicrun" logicalHeight="480" logicalWidth="320" mouseTouchOrder="0" encryptCode="0" retinaDisplay="0" touchToMouse="1" assetsOnly="0" orientation="1" architecture="1">
+  <imageScales/>
+ </properties>
+ <folder name="sounds">
+  <file source="sounds/coin.wav"/>
+  <file source="sounds/jump.wav"/>
+  <file source="sounds/fail.wav"/>
+ </folder>
+ <file source="json.lua"/>
+ <file source="dataSaver.lua"/>
+ <file source="scoresScreen.lua"/>
+ <file source="coin.lua"/>
+ <file source="obstacle.lua"/>
+ <file source="zombie.lua"/>
+ <file source="background.lua"/>
+ <file source="utils.lua"/>
+ <file source="ground.lua"/>
+ <folder name="assets">
+  <file source="assets/game_over.png"/>
+  <file source="assets/start_game_ru.png"/>
+  <file source="assets/MainFont.ttf"/>
+  <file source="assets/logo.png"/>
+  <file source="assets/coin.png"/>
+  <file source="assets/obstacle_3.png"/>
+  <file source="assets/obstacle_2.png"/>
+  <file source="assets/obstacle_1.png"/>
+  <file source="assets/ground_4_2.png"/>
+  <file source="assets/ground_4_1.png"/>
+  <file source="assets/player_menu.png"/>
+  <file source="assets/player_jetpack.png"/>
+  <file source="assets/player_end_12.png"/>
+  <file source="assets/player_end_11.png"/>
+  <file source="assets/player_end_10.png"/>
+  <file source="assets/player_end_9.png"/>
+  <file source="assets/player_end_8.png"/>
+  <file source="assets/player_end_7.png"/>
+  <file source="assets/player_end_6.png"/>
+  <file source="assets/player_end_5.png"/>
+  <file source="assets/player_end_4.png"/>
+  <file source="assets/player_end_3.png"/>
+  <file source="assets/player_end_2.png"/>
+  <file source="assets/player_end_1.png"/>
+  <file source="assets/ground_3_2.png"/>
+  <file source="assets/ground_3_1.png"/>
+  <file source="assets/zombie_4.png"/>
+  <file source="assets/zombie_3.png"/>
+  <file source="assets/zombie_2.png"/>
+  <file source="assets/ground_6.png"/>
+  <file source="assets/zombie_1.png"/>
+  <file source="assets/ground_5.png"/>
+  <file source="assets/ground_2_3.png"/>
+  <file source="assets/ground_2_2.png"/>
+  <file source="assets/ground_2_1.png"/>
+  <file source="assets/ground_1.png"/>
+  <file source="assets/tree2.png"/>
+  <file source="assets/tree1.png"/>
+  <file source="assets/bg3.png"/>
+  <file source="assets/bg2.png"/>
+  <file source="assets/bg1.png"/>
+  <file source="assets/player_dead.png"/>
+  <file source="assets/player_run.png"/>
+  <file source="assets/player_jump.png"/>
+  <file source="assets/start_game.png"/>
+ </folder>
+ <file source="main.lua"/>
+ <file source="animatedSprite.lua"/>
+ <file source="gameScreen.lua"/>
+ <file source="player.lua"/>
+ <file source="menuScreen.lua"/>
+ <file source="screens.lua"/>
+ <dependency from="animatedSprite.lua" to="utils.lua"/>
+ <dependency from="gameScreen.lua" to="coin.lua"/>
+ <dependency from="gameScreen.lua" to="zombie.lua"/>
+ <dependency from="gameScreen.lua" to="ground.lua"/>
+ <dependency from="gameScreen.lua" to="obstacle.lua"/>
+ <dependency from="gameScreen.lua" to="screens.lua"/>
+ <dependency from="gameScreen.lua" to="player.lua"/>
+ <dependency from="ground.lua" to="utils.lua"/>
+ <dependency from="menuScreen.lua" to="screens.lua"/>
+ <dependency from="player.lua" to="animatedSprite.lua"/>
+ <dependency from="player.lua" to="utils.lua"/>
+ <dependency from="main.lua" to="gameScreen.lua"/>
+ <dependency from="main.lua" to="screens.lua"/>
+ <dependency from="main.lua" to="menuScreen.lua"/>
+</project>
